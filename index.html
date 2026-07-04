@@ -3,87 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team Bio</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+    <title>Group 8 | Team Identity</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
 <header>
-    <h1>Meet Our Team</h1>
-    <!-- Example team logo -->
-    <img src="img/team_tabs_over_spaces.svg" alt="Team Logo" class="team-logo">
+    <div class="hero-backdrop"></div>
+    <div class="header-inner">
+        <p class="eyebrow">ITSC-3155 FINAL PROJECT TEAM</p>
+        <div class="title-wrap">
+            <img src="img/k-logo.svg" alt="Group 8 K logo" class="team-logo">
+            <h1>Group 8: Pixel Knights</h1>
+        </div>
+        <p class="subtitle">Computer scientists with different strengths, one mission, and a team-first mindset.</p>
 
-    <!-- Navigation menu to switch between sections -->
-    <nav>
-        <button onclick="showSection('bios')">Team Bios</button>
-        <button onclick="showSection('vision')">Team Vision</button>
-    </nav>
+        <nav>
+            <button id="bios-btn" class="nav-btn active" onclick="showSection('bios')">Team Bios</button>
+            <button id="vision-btn" class="nav-btn" onclick="showSection('vision')">Vision + Rules</button>
+        </nav>
+    </div>
 </header>
 
-<!-- Team bios section (default section) -->
-<div id="bios" class="container">
-    <!-- Each card represents an individual team member -->
-    <div class="card">
-        <h2>John Doe</h2>
-        <p>Frontend Developer</p>
-        <button onclick="toggleBio('bio1')">Show Bio</button>
-        <p id="bio1" class="bio">John is a skilled frontend developer with 5 years of experience in creating responsive web applications.</p>
-    </div>
-    <div class="card">
-        <h2>Johan Athial</h2>
-        <img class="avatar" alt="Programmer in hoodie working on laptop" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuhMFZRpm3aROUzGdPgahLK7j-kxiDs5LbxKctsV-PNw&s=10">
-        <p>Backend Developer</p>
-        <button onclick="toggleBio('bio2')">Show Bio</button>
-        <p id="bio2" class="bio">Johan is a student studying data science who is also deeply interested in backend software development. He enjoys working with data and configuring servers to work with the database to ensure real time udpates</p>
-        <img class="symbol" alt="Vim logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkc32IOCCdw11JbHPeB_uHzK_bht8XH_KSVdOJ3A1z2g&s=10">
-        <img class="symbol" alt="Python logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1F4dmI5txw2qmR_FlmspoMGO4IuZcGNRodQJ7lfn6tw&s">
-        "<img class="symbol" alt="MySQL Logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk9jfdMcNUKHJq8fVxkA-F94WLbZyz_luftvV8IjUbJA&s=10">
-        "<img class="symbol" alt="Neural Network" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1QNGFvHah3IA3maJPn-MYADoXjTAPqfkGa2GGCkyllA&s=10">
-    </div>
-    <div class="card">
-        <img style="height: 200px;" src="img/tayloravatar.jpg">
-        <h2>Taylor Stewart</h2>
-        <p>UI/UX Designer</p>
-        <button onclick="toggleBio('bio3')">Show Bio</button>
-        <div id="bio3" class="bio">
-        <p>Taylor is a UI/UX designer committed to creating user-friendly webpages with designs that pop.</p>
-        <h3>Favorite Tool</h3>
-        <figure>
-            <a href="https://vscodium.com/" target="_blank"><img style="height: 150px;" src="img/vscodium.png"></a>
-            <figcaption>
-                VS Codium, a free and open source version of VS Code, without telemetry/tracking. 
-            </figcaption>
-        </figure>
-        <h3>Security and Accessibility</h3>
-        <p>Taylor is passionate about security and accessibility, and believes everyone has the right to experience the internet with both of those concepts in mind. </p>
-        <h3>Influential Figure</h3>
-        <figure>
-            <a href="https://github.com/" target="_blank"><img style="height: 150px;" src="img/linus.jpg" alt="Linus Torvalds"></a>
-            <figcaption>
-                Linus Torvalds, creator of GitHub and Linux.
-            </figcaption>
-        </figure>
+<main id="bios" class="container bios-grid">
+    <section class="card richard-card">
+        <div class="member-head">
+            <img class="avatar cyber-avatar" src="img/richard-cyber-avatar.svg" alt="Richard cyber avatar">
+            <div>
+                <h2>Richard Siebenlist Jr</h2>
+                <p class="role">Front-End Development</p>
+            </div>
         </div>
+        <button class="bio-btn" onclick="toggleBio('bio1', this)">Show Bio</button>
+        <p id="bio1" class="bio">Richard is a front-end focused computer science student who enjoys building clean, responsive interfaces and turning project ideas into polished web experiences. He is especially interested in improving usability and making team projects feel intuitive for real users.</p>
+        <h3>Moodboard</h3>
+        <div class="moodboard">
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noopener noreferrer">CSS Craft</a>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub Flow</a>
+            <a href="https://www.figma.com" target="_blank" rel="noopener noreferrer">UI Wireframes</a>
+            <a href="https://web.dev" target="_blank" rel="noopener noreferrer">Web Performance</a>
+        </div>
+    </section>
 
-    </div>
-</div>
+    <section class="card">
+        <div class="member-head">
+            <img class="avatar" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuhMFZRpm3aROUzGdPgahLK7j-kxiDs5LbxKctsV-PNw&s=10" alt="Johan avatar">
+            <div>
+                <h2>Johan Athial</h2>
+                <p class="role">Backend Developer</p>
+            </div>
+        </div>
+        <button class="bio-btn" onclick="toggleBio('bio2', this)">Show Bio</button>
+        <p id="bio2" class="bio">Johan is a student studying data science who is also deeply interested in backend software development. He enjoys working with data and configuring servers to work with the database to ensure real time updates.</p>
+        <h3>Moodboard</h3>
+        <div class="moodboard image-board">
+            <img class="symbol" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkc32IOCCdw11JbHPeB_uHzK_bht8XH_KSVdOJ3A1z2g&s=10" alt="Vim logo">
+            <img class="symbol" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1F4dmI5txw2qmR_FlmspoMGO4IuZcGNRodQJ7lfn6tw&s" alt="Python logo">
+            <img class="symbol" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk9jfdMcNUKHJq8fVxkA-F94WLbZyz_luftvV8IjUbJA&s=10" alt="MySQL logo">
+            <a href="https://www.postgresql.org/docs/" target="_blank" rel="noopener noreferrer">PostgreSQL Docs</a>
+        </div>
+    </section>
 
-<!-- Team vision/mission statement section (hidden by default) -->
-<div id="vision" class="container" style="display: none;">
+    <section class="card">
+        <div class="member-head">
+            <img class="avatar" src="https://api.dicebear.com/8.x/thumbs/svg?seed=Taylor" alt="Taylor avatar">
+            <div>
+                <h2>Taylor Stewart</h2>
+                <p class="role">UI/UX Designer</p>
+            </div>
+        </div>
+        <button class="bio-btn" onclick="toggleBio('bio3', this)">Show Bio</button>
+        <p id="bio3" class="bio">Taylor blends design thinking with computer science to prototype interfaces, test interactions, and create workflows that feel clear and welcoming to real users.</p>
+        <h3>Moodboard</h3>
+        <div class="moodboard">
+            <a href="https://lawsofux.com" target="_blank" rel="noopener noreferrer">Laws of UX</a>
+            <a href="https://dribbble.com" target="_blank" rel="noopener noreferrer">Dribbble</a>
+            <a href="https://coolors.co" target="_blank" rel="noopener noreferrer">Color Systems</a>
+            <a href="https://www.nngroup.com/articles/" target="_blank" rel="noopener noreferrer">NN/g Research</a>
+        </div>
+    </section>
+
+    <section class="card wide-card">
+        <h2>Team Energy Board</h2>
+        <p class="team-note">How we code together: rapid iteration, respectful feedback, and visible progress every week.</p>
+        <div class="moodboard">
+            <a href="https://github.com/features/issues" target="_blank" rel="noopener noreferrer">Issue Tracking</a>
+            <a href="https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell" target="_blank" rel="noopener noreferrer">Branch Strategy</a>
+            <a href="https://www.atlassian.com/agile/scrum" target="_blank" rel="noopener noreferrer">Agile Cadence</a>
+            <a href="https://owasp.org/www-project-top-ten/" target="_blank" rel="noopener noreferrer">Secure Mindset</a>
+        </div>
+    </section>
+</main>
+
+<section id="vision" class="container mission-panel" style="display: none;">
     <h2>Our Mission Statement</h2>
-    <p>We strive to build a collaborative, transparent, and dedicated environment where every team member feels empowered to speak up, share ideas, and solve problems together. As software developers, our strength lies in honest communication, mutual respect, and catching challenges early. Our mission is to deliver high-quality software that meets and exceeds expectations, while growing as engineers and teammates along the way.</p>
-<h2>Team Rules</h2>
-<ol>
-  <li>Show up and stay engaged.</li>
-  <li>Communicate honestly and often.</li>
-  <li>Listen and value different approaches.</li>
-  <li>Speak up immediately.</li>
-  <li>Give advance notice on delays.</li>
-  <li>Hold each other accountable.</li>
-</ol>
-</div>
+    <p>
+        We are Group 8, a team of computer science students committed to building useful, reliable, and inclusive software.
+        Our strength is how we combine front-end polish, back-end logic, and user-centered design to deliver projects that are both functional and memorable.
+    </p>
 
-<script src="script.js"></script> <!-- Link to external JavaScript file -->
+    <h3>Team Rules</h3>
+    <ul class="team-rules">
+        <li>Respect every voice and give constructive feedback, not personal criticism.</li>
+        <li>Push code in small, clear commits and write meaningful commit messages.</li>
+        <li>Review each other&rsquo;s work before merging to main.</li>
+        <li>Communicate blockers early so the team can help fast.</li>
+        <li>Keep quality high with testing, responsive layouts, and accessible design.</li>
+    </ul>
 
+    <p class="contributors">
+        Contributors: Richard Siebenlist Jr, Johan Athial, Taylor Stewart
+    </p>
+</section>
+
+<script src="script.js"></script>
 </body>
 </html>
