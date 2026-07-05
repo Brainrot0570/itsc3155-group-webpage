@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" role="img" aria-label="Phishing awareness icon">
+  <rect width="160" height="160" rx="24" fill="#f5f7fb"/>
+  <circle cx="80" cy="80" r="54" fill="none" stroke="#2cff87" stroke-width="8"/>
+  <path d="M50 62h60l-28 22v18l-10 6V84z" fill="#0f1e35" stroke="#2cff87" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M80 102v16" stroke="#2cff87" stroke-width="6" stroke-linecap="round"/>
+  <path d="M68 124h24" stroke="#2cff87" stroke-width="6" stroke-linecap="round"/>
+</svg>

@@ -36,15 +36,15 @@ function showSection(sectionId) {
         biosSection.style.display = "grid";
         visionSection.style.display = "none";
         if (biosBtn && visionBtn) {
-            biosBtn.classList.add("active");
-            visionBtn.classList.remove("active");
+            biosBtn.classList.add("nav-btn-active");
+            visionBtn.classList.remove("nav-btn-active");
         }
     } else if (sectionId === "vision") {
         biosSection.style.display = "none";
         visionSection.style.display = "block";
         if (biosBtn && visionBtn) {
-            visionBtn.classList.add("active");
-            biosBtn.classList.remove("active");
+            visionBtn.classList.add("nav-btn-active");
+            biosBtn.classList.remove("nav-btn-active");
         }
     }
 }

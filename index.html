@@ -16,12 +16,12 @@
         <p class="eyebrow">ITSC-3155 FINAL PROJECT TEAM</p>
         <div class="title-wrap">
             <img src="img/team_tabs_over_spaces.svg" alt="Group 8 logo" class="team-logo">
-            <h1>Group 8: Team Tabs Over Spaces</h1>
+            <h1 class="heading-font title-main">Group 8: Team Tabs Over Spaces</h1>
         </div>
         <p class="subtitle">Computer scientists with different strengths, one mission, and a team-first mindset.</p>
 
         <nav>
-            <button id="bios-btn" class="nav-btn active" onclick="showSection('bios')">Team Bios</button>
+            <button id="bios-btn" class="nav-btn nav-btn-active" onclick="showSection('bios')">Team Bios</button>
             <button id="vision-btn" class="nav-btn" onclick="showSection('vision')">Vision + Rules</button>
         </nav>
     </div>
@@ -32,18 +32,30 @@
         <div class="member-head">
             <img class="avatar cyber-avatar" src="img/richard-cyber-avatar.svg" alt="Richard cyber avatar">
             <div>
-                <h2>Richard Siebenlist Jr</h2>
+                <h2 class="heading-font member-name">Richard Siebenlist Jr</h2>
                 <p class="role">Front-End Development</p>
             </div>
         </div>
         <button class="bio-btn" onclick="toggleBio('bio1', this)">Show Bio</button>
         <p id="bio1" class="bio">Richard is a front-end focused computer science student who enjoys building clean, responsive interfaces and turning project ideas into polished web experiences. He is especially interested in improving usability and making team projects feel intuitive for real users.</p>
-        <h3>Moodboard</h3>
-        <div class="moodboard">
-            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noopener noreferrer">CSS Craft</a>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub Flow</a>
-            <a href="https://www.figma.com" target="_blank" rel="noopener noreferrer">UI Wireframes</a>
-            <a href="https://web.dev" target="_blank" rel="noopener noreferrer">Web Performance</a>
+        <h3 class="heading-font card-title moodboard-title">Moodboard</h3>
+        <div class="moodboard cyber-board">
+            <a class="moodboard-card" href="https://www.cisa.gov/topics/cyber-threats-and-advisories/phishing" target="_blank" rel="noopener noreferrer">
+                <img class="moodboard-icon" src="img/phishing.svg" alt="Phishing awareness icon">
+                <span>Phishing Awareness</span>
+            </a>
+            <a class="moodboard-card" href="https://www.cloudflare.com/learning/ssl/what-is-encryption/" target="_blank" rel="noopener noreferrer">
+                <img class="moodboard-icon" src="img/encryption.svg" alt="Encryption icon">
+                <span>Encryption</span>
+            </a>
+            <a class="moodboard-card" href="https://www.cisco.com/c/en/us/products/security/firewalls/what-is-a-firewall.html" target="_blank" rel="noopener noreferrer">
+                <img class="moodboard-icon" src="img/firewall.svg" alt="Firewall icon">
+                <span>Firewalls</span>
+            </a>
+            <a class="moodboard-card" href="https://www.cisa.gov/secure-our-world/use-strong-passwords" target="_blank" rel="noopener noreferrer">
+                <img class="moodboard-icon" src="img/password-security.svg" alt="Password security icon">
+                <span>Password Security</span>
+            </a>
         </div>
     </section>
 
@@ -51,18 +63,18 @@
         <div class="member-head">
             <img class="avatar" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuhMFZRpm3aROUzGdPgahLK7j-kxiDs5LbxKctsV-PNw&s=10" alt="Johan avatar">
             <div>
-                <h2>Johan Athial</h2>
+                <h2 class="heading-font member-name">Johan<br>Athial</h2>
                 <p class="role">Backend Developer</p>
             </div>
         </div>
         <button class="bio-btn" onclick="toggleBio('bio2', this)">Show Bio</button>
         <p id="bio2" class="bio">Johan is a student studying data science who is also deeply interested in backend software development. He enjoys working with data and configuring servers to work with the database to ensure real time updates.</p>
-        <h3>Moodboard</h3>
+        <h3 class="heading-font card-title moodboard-title">Moodboard</h3>
         <div class="moodboard image-board">
             <img class="symbol" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkc32IOCCdw11JbHPeB_uHzK_bht8XH_KSVdOJ3A1z2g&s=10" alt="Vim logo">
             <img class="symbol" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1F4dmI5txw2qmR_FlmspoMGO4IuZcGNRodQJ7lfn6tw&s" alt="Python logo">
             <img class="symbol" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk9jfdMcNUKHJq8fVxkA-F94WLbZyz_luftvV8IjUbJA&s=10" alt="MySQL logo">
-            <img class="symbol" alt="Neural Network" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1QNGFvHah3IA3maJPn-MYADoXjTAPqfkGa2GGCkyllA&s=10">
+            <img class="symbol" alt="Neural network" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1QNGFvHah3IA3maJPn-MYADoXjTAPqfkGa2GGCkyllA&s=10">
         </div>
     </section>
 
@@ -70,41 +82,41 @@
         <div class="member-head">
             <img class="avatar" src="img/cat.jpg" alt="Taylor avatar">
             <div>
-                <h2>Taylor Stewart</h2>
+                <h2 class="heading-font member-name">Taylor Stewart</h2>
                 <p class="role">UI/UX Designer</p>
             </div>
         </div>
         <button class="bio-btn" onclick="toggleBio('bio3', this)">Show Bio</button>
         <p id="bio3" class="bio">Taylor is a UI/UX designer committed to creating user-friendly webpages with designs that pop. Taylor is passionate about security and accessibility, and believes everyone has the right to experience the internet with both of those concepts in mind. </p>
-        <h3>Moodboard</h3>
+        <h3 class="heading-font card-title moodboard-title">Moodboard</h3>
         <div class="moodboard image-board">
-            <img class="symbol" src="img/codium.png">
+            <img class="symbol" src="img/codium.png" alt="Codium logo">
             <a href="https://vscodium.com/" target="_blank">VS Codium</a>
             <a href="https://wiki.archlinux.org/title/Main_page" target="_blank">Arch</a>
-            <img class="symbol" src="img/arch.png">
+            <img class="symbol" src="img/arch.png" alt="Arch Linux logo">
         </div>
     </section>
 
-    <section class="card wide-card">
-        <h2>Team Energy Board</h2>
+    <section class="card wide-card energy-board">
+        <h2 class="heading-font">Team Energy Board</h2>
         <p class="team-note">How we code together: rapid iteration, respectful feedback, and visible progress every week.</p>
         <div class="moodboard">
-            <a href="https://github.com/features/issues" target="_blank" rel="noopener noreferrer">Issue Tracking</a>
-            <a href="https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell" target="_blank" rel="noopener noreferrer">Branch Strategy</a>
-            <a href="https://www.atlassian.com/agile/scrum" target="_blank" rel="noopener noreferrer">Agile Cadence</a>
-            <a href="https://owasp.org/www-project-top-ten/" target="_blank" rel="noopener noreferrer">Secure Mindset</a>
+            <div class="moodboard-item">Issue Tracking</div>
+            <div class="moodboard-item">Branch Strategy</div>
+            <div class="moodboard-item">Agile Cadence</div>
+            <div class="moodboard-item">Secure Mindset</div>
         </div>
     </section>
 </main>
 
 <section id="vision" class="container mission-panel" style="display: none;">
-    <h2>Our Mission Statement</h2>
+    <h2 class="heading-font mission-title">Our Mission Statement</h2>
     <p>
         We are Group 8, a team of computer science students committed to building useful, reliable, and inclusive software.
         Our strength is how we combine front-end polish, back-end logic, and user-centered design to deliver projects that are both functional and memorable.
     </p>
 
-    <h3>Team Rules</h3>
+    <h3 class="heading-font card-title">Team Rules</h3>
     <ul class="team-rules">
         <li>Respect every voice and give constructive feedback, not personal criticism.</li>
         <li>Push code in small, clear commits and write meaningful commit messages.</li>
@@ -117,7 +129,6 @@
         Contributors: Richard Siebenlist Jr, Johan Athial, Taylor Stewart
     </p>
 </section>
-
 <script src="script.js"></script>
 </body>
 </html>

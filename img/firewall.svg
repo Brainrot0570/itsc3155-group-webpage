@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" role="img" aria-label="Firewall icon">
+  <rect width="160" height="160" rx="24" fill="#f5f7fb"/>
+  <path d="M40 56h80v48H40z" fill="#0f1e35" stroke="#2cff87" stroke-width="6"/>
+  <path d="M40 72h80M40 88h80M40 104h80" stroke="#2cff87" stroke-width="5"/>
+  <path d="M60 56v48M84 56v48M108 56v48" stroke="#2cff87" stroke-width="5"/>
+  <path d="M50 126l14-14 12 12 16-16 14 14 16-16" fill="none" stroke="#17be64" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
